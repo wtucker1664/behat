@@ -1,0 +1,18 @@
+default:
+    suites:
+        default:
+            contexts:
+                - FeatureContext
+                - Imbo\BehatApiExtension\Context\ApiContext
+            filters:
+                tags: "~@symfony_4_edge_cases"
+        symfony_4_edge_cases:
+            contexts:
+                - FeatureContext
+                - Imbo\BehatApiExtension\Context\ApiContext
+            filters:
+                tags: "@symfony_4_edge_cases"
+    extensions:
+        Imbo\BehatApiExtension:
+            apiClient:
+                base_uri: http://127.0.0.1:8000

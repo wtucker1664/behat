@@ -1,0 +1,9 @@
+{
+    "name": "warren/behat",
+    "description": "A project for testing",
+    "type": "project",
+    "require": {
+        "behat/behat": "^3.7",
+        "imbo/behat-api-extension": "^2.3"
+    }
+}
